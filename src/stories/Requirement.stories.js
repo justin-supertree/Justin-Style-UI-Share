@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import "./styles.css";
+
 import { Requirements } from "../components/Requirements";
 
-const stories = storiesOf("App Component", module);
+import "./styles.css";
 
-stories.add("App", () => {
+const Requirement = storiesOf("App Component", module);
+
+Requirement.add("App", () => {
   const [valid, setValid] = useState(false);
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
@@ -55,3 +57,5 @@ stories.add("App", () => {
     </div>
   );
 });
+
+export default Requirement.stories;

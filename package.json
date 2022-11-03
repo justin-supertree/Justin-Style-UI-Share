@@ -1,12 +1,15 @@
 {
-  "name": "style-ui",
+  "name": "@JustinPark1688-Style-UI",
   "version": "1.0.0",
   "description": "Justin Styled UI for each Project!",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-lib": "rollup -c"
   },
   "author": "Justin",
   "license": "MIT",
@@ -16,6 +19,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-image": "^3.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
@@ -24,9 +31,18 @@
     "@storybook/manager-webpack4": "^6.5.13",
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^9.0.1",
+    "babel-preset-react-app": "^10.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rollup": "^3.2.5",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "postcss": "^8.4.18",
+    "postcss-import": "^15.0.0"
+  }
 }

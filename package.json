@@ -4,7 +4,7 @@
   "description": "Justin Styled UI for each Project!",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",

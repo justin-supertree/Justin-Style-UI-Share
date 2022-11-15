@@ -44,5 +44,6 @@
   "dependencies": {
     "postcss": "^8.4.18",
     "postcss-import": "^15.0.0"
-  }
+  },
+  "repository": "https://github.com/justin-supertree/Justin-Style-UI-Share.git"
 }
